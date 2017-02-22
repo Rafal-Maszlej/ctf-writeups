@@ -7,8 +7,9 @@ After some shots, he spells to you his secrets to delivery all gifts on Christma
 At the end of the night, he goes alway and left behind his wallet and the bag with the list of gifts to delivery. Try to discover if you will receive something.
 
 Otrzymujemy paczkę:
-    [santa-id.png](santa-id.png)
-    [list.zip](list.zip)
+
+   * [santa-id.png](santa-id.png)
+   * [list.zip](list.zip)
 
 W list.zip znajduje się 11001 plików png zawierających kody QR.
 Przykładowy plik:
