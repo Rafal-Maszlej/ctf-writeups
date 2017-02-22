@@ -1,4 +1,4 @@
-Zadanie z kategorii MISC za 100 punktów.
+Zadanie z kategorii CRYPTO za 100 punktów.
 
 Treść zadania:
 
@@ -86,19 +86,19 @@ Próba różnych innych działań:
 >>> for item in d.items():
 ...     print(ord_calc(*item))
 ... 
-+ -- > 154
++ --> 154
 - --> 14
 * --> 248
 ***************
-+ -- > 154
++ --> 154
 - --> 20
 * --> 197
 ***************
-+ -- > 138
++ --> 138
 - --> -42
 * --> 224
 ***************
-+ -- > 154
++ --> 154
 - --> -8
 * --> 25
 ***************
