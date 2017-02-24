@@ -1,0 +1,238 @@
+           +++         Fibonacci challenge               +++
+
+ [+] A fibonacci serie can be represented by the following function:
+
+     Fn = | 0                       if N = 0
+          | 1                       if N = 1
+          | Fn(N - 1) + Fn(N - 2)   if N > 1
+
+ [+] Given a N value, we want to know how many recursive calls the program do.
+
+ [+] Example with N equal to 3
+
+                               +-------+
+                         +-----+ fib 3 +-----+
+                         |     +-------+     |  
+                         |                   |
+                     +---+---+           +---+---+
+               +-----+ fib 2 +-----+     | fib 1 +------+
+               |     +-------+     |     +-------+      |
+               |                   |                    |
+           +---+---+           +---+---+           +----+---+
+    +------+ fib 1 |    +------+ fib 0 |           | return |
+    |      +-------+    |      +-------+           +--------+
+    |                   |
++---+----+          +---+----+
+| return |          | return |
++--------+          +--------+
+
+ [+] The answer is 4 recursive calls. (you only need to answer 4) 
+
+ [+] To help the resolution, you can inform only the last three numbers
+ 
+ [!] You have 25 seconds to answer each question. 
+
+ [+] To start the challenge inform the number 20:20
+OK, let's go![+] Stage 1 -> N = 3
+     The answer is:4
+[+] Correct![+] Stage 2 -> N = 6
+     The answer is:24
+[+] Correct![+] Stage 3 -> N = 7
+     The answer is:40
+[+] Correct![+] Stage 4 -> N = 6
+     The answer is:24
+[+] Correct![+] Stage 5 -> N = 3
+     The answer is:4
+[+] Correct![+] Stage 6 -> N = 3
+     The answer is:4
+[+] Correct![+] Stage 7 -> N = 5
+     The answer is:14
+[+] Correct![+] Stage 8 -> N = 9
+     The answer is:108
+[+] Correct![+] Stage 9 -> N = 8
+     The answer is:66
+[+] Correct![+] Stage 10 -> N = 5
+     The answer is:14
+[+] Correct![+] Stage 11 -> N = 8
+     The answer is:66
+[+] Correct![+] Stage 12 -> N = 4
+     The answer is:8
+[+] Correct![+] Stage 13 -> N = 5
+     The answer is:14
+[+] Correct![+] Stage 14 -> N = 9
+     The answer is:108
+[+] Correct![+] Stage 15 -> N = 7
+     The answer is:40
+[+] Correct![+] Stage 16 -> N = 5
+     The answer is:14
+[+] Correct![+] Stage 17 -> N = 8
+     The answer is:66
+[+] Correct![+] Stage 18 -> N = 10
+     The answer is:176
+[+] Correct![+] Stage 19 -> N = 9
+     The answer is:108
+[+] Correct![+] Stage 20 -> N = 10
+     The answer is:176
+[+] Correct![+] Stage 21 -> N = 16
+     The answer is:192
+[+] Correct![+] Stage 22 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 23 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 24 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 25 -> N = 26
+     The answer is:834
+[+] Correct![+] Stage 26 -> N = 20
+     The answer is:890
+[+] Correct![+] Stage 27 -> N = 26
+     The answer is:834
+[+] Correct![+] Stage 28 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 29 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 30 -> N = 17
+     The answer is:166
+[+] Correct![+] Stage 31 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 32 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 33 -> N = 16
+     The answer is:192
+[+] Correct![+] Stage 34 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 35 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 36 -> N = 23
+     The answer is:734
+[+] Correct![+] Stage 37 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 38 -> N = 30
+     The answer is:536
+[+] Correct![+] Stage 39 -> N = 23
+     The answer is:734
+[+] Correct![+] Stage 40 -> N = 16
+     The answer is:192
+[+] Correct![+] Stage 41 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 42 -> N = 20
+     The answer is:890
+[+] Correct![+] Stage 43 -> N = 26
+     The answer is:834
+[+] Correct![+] Stage 44 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 45 -> N = 16
+     The answer is:192
+[+] Correct![+] Stage 46 -> N = 19
+     The answer is:528
+[+] Correct![+] Stage 47 -> N = 15
+     The answer is:972
+[+] Correct![+] Stage 48 -> N = 28
+     The answer is:456
+[+] Correct![+] Stage 49 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 50 -> N = 19
+     The answer is:528
+[+] Correct![+] Stage 51 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 52 -> N = 27
+     The answer is:620
+[+] Correct![+] Stage 53 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 54 -> N = 18
+     The answer is:360
+[+] Correct![+] Stage 55 -> N = 16
+     The answer is:192
+[+] Correct![+] Stage 56 -> N = 15
+     The answer is:972
+[+] Correct![+] Stage 57 -> N = 15
+     The answer is:972
+[+] Correct![+] Stage 58 -> N = 17
+     The answer is:166
+[+] Correct![+] Stage 59 -> N = 24
+     The answer is:48
+[+] Correct![+] Stage 60 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 61 -> N = 18
+     The answer is:360
+[+] Correct![+] Stage 62 -> N = 18
+     The answer is:360
+[+] Correct![+] Stage 63 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 64 -> N = 29
+     The answer is:78
+[+] Correct![+] Stage 65 -> N = 17
+     The answer is:166
+[+] Correct![+] Stage 66 -> N = 16
+     The answer is:192
+[+] Correct![+] Stage 67 -> N = 30
+     The answer is:536
+[+] Correct![+] Stage 68 -> N = 19
+     The answer is:528
+[+] Correct![+] Stage 69 -> N = 30
+     The answer is:536
+[+] Correct![+] Stage 70 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 71 -> N = 17
+     The answer is:166
+[+] Correct![+] Stage 72 -> N = 27
+     The answer is:620
+[+] Correct![+] Stage 73 -> N = 28
+     The answer is:456
+[+] Correct![+] Stage 74 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 75 -> N = 29
+     The answer is:78
+[+] Correct![+] Stage 76 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 77 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 78 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 79 -> N = 16
+     The answer is:192
+[+] Correct![+] Stage 80 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 81 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 82 -> N = 28
+     The answer is:456
+[+] Correct![+] Stage 83 -> N = 17
+     The answer is:166
+[+] Correct![+] Stage 84 -> N = 26
+     The answer is:834
+[+] Correct![+] Stage 85 -> N = 20
+     The answer is:890
+[+] Correct![+] Stage 86 -> N = 21
+     The answer is:420
+[+] Correct![+] Stage 87 -> N = 22
+     The answer is:312
+[+] Correct![+] Stage 88 -> N = 23
+     The answer is:734
+[+] Correct![+] Stage 89 -> N = 25
+     The answer is:784
+[+] Correct![+] Stage 90 -> N = 29
+     The answer is:78
+[+] Correct![+] Stage 91 -> N = 279
+     The answer is:668
+[+] Correct![+] Stage 92 -> N = 307
+     The answer is:240
+[+] Correct![+] Stage 93 -> N = 262
+     The answer is:32
+[+] Correct![+] Stage 94 -> N = 398
+     The answer is:450
+[+] Correct![+] Stage 95 -> N = 380
+     The answer is:410
+[+] Correct![+] Stage 96 -> N = 232
+     The answer is:304
+[+] Correct![+] Stage 97 -> N = 273
+     The answer is:12
+[+] Correct![+] Stage 98 -> N = 452
+     The answer is:394
+[+] Correct![+] Stage 99 -> N = 406
+     The answer is:224
+[+] Correct![+] Stage 100 -> N = 428
+     The answer is:506
+[+] Correct!
+
+ [+] Congratulations, the flag is: 3DS{g00d4lgorithmsC4nSaveYourTime}
