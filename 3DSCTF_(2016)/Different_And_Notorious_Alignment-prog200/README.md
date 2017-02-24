@@ -73,3 +73,9 @@ Poniżej skrypt komunikujący się z serwerem i odpowiadający na pytania + log.
 
 * [client.py](client.py)
 * [log.txt](log.txt)
+
+Po porównaniu 100 próbek dostajemy flagę:
+
+```
+ [+] Congratulations, the flag is: 3DS{Y0u_4ch13v3d_h4mm1ng_D1st4nc3}
+```
