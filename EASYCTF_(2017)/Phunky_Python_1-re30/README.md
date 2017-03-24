@@ -22,7 +22,7 @@ print out
 
 We have a list of numbers that are slightly different from each other
 
-```
+```python
 digs = [8407367755427688850, 
         8407367755427688846, 
         8407367755427688864, 
@@ -34,7 +34,7 @@ digs = [8407367755427688850,
 
 And what does the for loop do?
 
-```
+```python
 for letter in reversed(digs):
     out = chr(letter - x) + out
 ```
@@ -45,7 +45,7 @@ Finally, the character is added to the front of the resulting string out = chr(l
 
 The loop can be reduced to a more readable form:
 
-```
+```python
 for letter in digs:
     out += chr(letter - x)
 ```
@@ -66,7 +66,7 @@ And this is searched x.
 
 Mamy listę liczb, które nieznacznie różnią się od siebie
 
-```
+```python
 digs = [8407367755427688850, 
         8407367755427688846, 
         8407367755427688864, 
@@ -78,7 +78,7 @@ digs = [8407367755427688850,
 
 A co robi pętla for?
 
-```
+```python
 for letter in reversed(digs):
     out = chr(letter - x) + out
 ```
@@ -89,7 +89,7 @@ Na końcu znak dodawany jest z przodu wynikowego stringa out = chr(letter - x) +
 
 Całość można sprowadzić do nieco bardziej czytelnej postaci:
 
-```
+```python
 for letter in digs:
     out += chr(letter - x)
 ```
