@@ -17,7 +17,7 @@
 Task very similar to the previous one [RSA_2](https://github.com/h4stoor/ctf/tree/master/EASYCTF_%282017%29/RSA_2-crypto80). The only difference is that the values `n`, `e` and `c` are given as hexadecimal numbers.
 After converting them to a decimal, the solution looks the same.
 
-Again handy turned out to be the site [factordb.com](http://factordb.com/), Thanks to which we get `n` factorized on two twin primes.
+Again handy turned out to be the site [factordb.com](http://factordb.com/), thanks to which we get `n` factorized on two twin primes.
 
 Script:
 

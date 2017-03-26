@@ -15,11 +15,11 @@ c: 43465248299278658712013216049003172427898782261990372316282214376041873514481
 
 ### Solution:
 
-In this case, the value of `phi` and `d` is missing for decrypting the message
+In this case, the value of `phi` and `d` is missing.
 
 Phi is calculated from the formula: `phi = (p - 1) * (q -1)`
 
-And by using the python library `libnum`, you can quickly calculate the value of d: `d = libnum.invmod(e, phi)`
+And by using python library `libnum`, we can quickly calculate the value of d: `d = libnum.modular.invmod(e, phi)`
 
 The whole script:
 
@@ -53,7 +53,7 @@ Do rozszyfrowania wiadomości brakuje `phi` oraz `d`.
 
 Phi liczy się ze wzoru: `phi = (p - 1) * (q -1)`
 
-Natomiast korzystając z pythonowej biblioteki `libnum` można szybko wyliczyć wartość d: `d = libnum.invmod(e, phi)`
+Natomiast korzystając z pythonowej biblioteki `libnum` można szybko wyliczyć wartość d: `d = libnum.modular.invmod(e, phi)`
 
 Cały skrypt:
 
