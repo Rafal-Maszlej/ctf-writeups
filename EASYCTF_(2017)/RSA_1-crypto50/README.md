@@ -1,11 +1,81 @@
 ## RSA_1 [CRYPTO 50]
 
+>I found somebody's notes on their private RSA! Help me crack this.
 >
+>ciphertest1.txt
+
+```
+p: 33499881069427614105926941260008415630190853527846401734073924527104092366847259
+q: 34311544767652906613104559081988349779622789386528780506962212898921316785995851
+e: 65537
+c: 43465248299278658712013216049003172427898782261990372316282214376041873514481386908793943532363461126240609464283533882761307749486816342864113338277082746552
+```
 
 ### EN / [PL](#rozwiązanie)
 
 ### Solution:
 
+In this case, the value of `phi` and `d` is missing for decrypting the message
+
+Phi is calculated from the formula: `phi = (p - 1) * (q -1)`
+
+And by using the python library `libnum`, you can quickly calculate the value of d: `d = libnum.invmod(e, phi)`
+
+The whole script:
+
+```python
+import libnum
+
+p = 33344326767014752838434526961570375067255972321227081207628247470339108364986921
+q = 36673173563094173179111749847331735301801030065429547959010331249896215216189957
+e = 65537
+c = 250662967857826513120525341840233204247609891750716171653638286285500959044806033556211222333356334072788082750030218397868694676183352453940229378663563815771
+
+n = p * q
+phi = (p - 1) * (q -1)
+
+
+d = libnum.modular.invmod(e, phi)
+print libnum.n2s(pow(c, d, n))
+```
+
+And the decoded flag:
+
+```
+easyctf{wh3n_y0u_h4ve_p&q_RSA_iz_ez_1d61bde5}
+```
+
 ### [EN](#solution) / PL
 
 ### Rozwiązanie:
+
+Do rozszyfrowania wiadomości brakuje `phi` oraz `d`.
+
+Phi liczy się ze wzoru: `phi = (p - 1) * (q -1)`
+
+Natomiast korzystając z pythonowej biblioteki `libnum` można szybko wyliczyć wartość d: `d = libnum.invmod(e, phi)`
+
+Cały skrypt:
+
+```python
+import libnum
+
+p = 33344326767014752838434526961570375067255972321227081207628247470339108364986921
+q = 36673173563094173179111749847331735301801030065429547959010331249896215216189957
+e = 65537
+c = 250662967857826513120525341840233204247609891750716171653638286285500959044806033556211222333356334072788082750030218397868694676183352453940229378663563815771
+
+n = p * q
+phi = (p - 1) * (q -1)
+
+
+d = libnum.modular.invmod(e, phi)
+print libnum.n2s(pow(c, d, n))
+```
+
+I rozszyfrowana flaga:
+
+```
+easyctf{wh3n_y0u_h4ve_p&q_RSA_iz_ez_1d61bde5}
+```
+

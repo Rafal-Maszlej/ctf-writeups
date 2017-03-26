@@ -39,9 +39,9 @@ for letter in reversed(digs):
     out = chr(letter - x) + out
 ```
 
-Items are taken from the digs list, but in reverse order reversed(digs).
-An unknown value is subtracted from each element, and the whole is converted to a character chr(letter - x).
-Finally, the character is added to the front of the resulting string out = chr(letter - x) + out.
+Items are taken from the digs list, but in reverse order `reversed(digs)`.
+An unknown value is subtracted from each element, and the whole is converted to a character `chr(letter - x)`.
+Finally, the character is added to the front of the resulting string `out = chr(letter - x) + out`.
 
 The loop can be reduced to a more readable form:
 
@@ -50,7 +50,7 @@ for letter in digs:
     out += chr(letter - x)
 ```
 
-The program has to print "easyctf", so the first element from digs minus x must be equal to ord('e').
+The program has to print "easyctf", so the first element from digs minus x must be equal to `ord('e')`.
 
 ```
 >>> 8407367755427688850 - ord('e')
@@ -83,9 +83,9 @@ for letter in reversed(digs):
     out = chr(letter - x) + out
 ```
 
-Brane są elementy z listy digs, ale w odwróconej kolejności reversed(digs).
-Od każdego elementu odejmowana jest pewna wartość, a całość przekształcana jest na znak chr(letter - x).
-Na końcu znak dodawany jest z przodu wynikowego stringa out = chr(letter - x) + out.
+Brane są elementy z listy digs, ale w odwróconej kolejności `reversed(digs)`.
+Od każdego elementu odejmowana jest pewna wartość, a całość przekształcana jest na znak `chr(letter - x)`.
+Na końcu znak dodawany jest z przodu wynikowego stringa `out = chr(letter - x) + out`.
 
 Całość można sprowadzić do nieco bardziej czytelnej postaci:
 
@@ -94,7 +94,7 @@ for letter in digs:
     out += chr(letter - x)
 ```
 
-Program ma wypisywać "easyctf", więc pierwszy element z digs minus x ma równać się ord('e').
+Program ma wypisywać "easyctf", więc pierwszy element z digs minus x ma równać się `ord('e')`.
 
 ```
 >>> 8407367755427688850 - ord('e')
