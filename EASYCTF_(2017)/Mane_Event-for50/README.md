@@ -8,7 +8,7 @@
 
 ### Solution:
 
-The flag is hidden in the picture metadata.
+The flag is hidden in the picture's metadata.
 
 In my case search was limited to
 
