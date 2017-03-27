@@ -45,12 +45,12 @@ hash_dict = {md5(bytes(letter, 'utf-8')).hexdigest(): letter for letter in alpha
 text = ''
 
 for line in open('hexstrings', 'r'):
-	try:
-		text += hash_dict[line.strip()]
-	except KeyError:
-		print(line)
-		text += ' '
-	
+    try:
+        text += hash_dict[line.strip()]
+    except KeyError:
+        print(line)
+        text += ' '
+    
 
 print(text)
 ```
@@ -109,12 +109,12 @@ hash_dict = {md5(bytes(letter, 'utf-8')).hexdigest(): letter for letter in alpha
 text = ''
 
 for line in open('hexstrings', 'r'):
-	try:
-		text += hash_dict[line.strip()]
-	except KeyError:
-		print(line)
-		text += ' '
-	
+    try:
+        text += hash_dict[line.strip()]
+    except KeyError:
+        print(line)
+        text += ' '
+    
 
 print(text)
 ```

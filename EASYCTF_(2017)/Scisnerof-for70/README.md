@@ -32,12 +32,12 @@ Script:
 
 ```python
 with open('elif', 'rb') as f:
-	data = f.read()
+    data = f.read()
 
 data = data[::-1]
 
 with open('file', 'wb') as f:
-	f.write(data)
+    f.write(data)
 ```
 
 The result is a valid png file:
@@ -78,12 +78,12 @@ Skrypt:
 
 ```python
 with open('elif', 'rb') as f:
-	data = f.read()
+    data = f.read()
 
 data = data[::-1]
 
 with open('file', 'wb') as f:
-	f.write(data)
+    f.write(data)
 ```
 
 Wynikiem jest poprawny plik png:
