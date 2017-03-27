@@ -16,7 +16,7 @@ s = [s[i:i+2] for i in range(0, len(s), 2)]
 s = ''.join(chr(int(i, base=16)) for i in s)
 ```
 
-First line divides the encoded string into two-character parts and writes everything to the list.
+First line divides the encoded string into two-character parts and writes everything to a list.
 
 Next, each item in the list is first converted to int in a decimal system, then to a char, and then the whole is combined into one string.
 
@@ -35,7 +35,7 @@ After checking the first four characters can be seen that inside there is anothe
 ```
 
 As it is unknown how deeply nested exec's are, I created a loop, where in every iteration the `exec` part is cut off,
-then the rest is processed into a list and then each item on the char. Finally, the whole is concatenated back into string.
+then the rest is processed into a list and then each item to a char. Finally, the whole is concatenated back into string.
 I assumed here that `exec` has only `chr` functions inside it, otherwise the script would return an error.
 
 Below the entire script:
