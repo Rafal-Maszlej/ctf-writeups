@@ -25,23 +25,23 @@ As a result we get the next base64 string.
 
 A short script decodes the nesting sequences as long as there is something to decode:
 
-```
+```python
 from base64 import b64decode
 
 crypt = ''
 
 for line in open('flag.txt', 'r'):
-	crypt += line.strip()
+    crypt += line.strip()
 
 
 while True:
-	try:
-		crypt2 = str(b64decode(crypt), 'utf-8')
-	except:
-		print(crypt)
-		break
-	
-	crypt = crypt2
+    try:
+        crypt2 = str(b64decode(crypt), 'utf-8')
+    except:
+        print(crypt)
+        break
+    
+    crypt = crypt2
 ```
 
 After 21 iterations we get the flag:
@@ -71,23 +71,23 @@ Dodatkowo w wyniku dostajemy następny string base64.
 
 Krótki skrypt dekodujący kolejne zagnieżdżenia, dopóki jest coś do dekodowania:
 
-```
+```python
 from base64 import b64decode
 
 crypt = ''
 
 for line in open('flag.txt', 'r'):
-	crypt += line.strip()
+    crypt += line.strip()
 
 
 while True:
-	try:
-		crypt2 = str(b64decode(crypt), 'utf-8')
-	except:
-		print(crypt)
-		break
-	
-	crypt = crypt2
+    try:
+        crypt2 = str(b64decode(crypt), 'utf-8')
+    except:
+        print(crypt)
+        break
+    
+    crypt = crypt2
 ```
 
 Po 21 iteracjach dostajemy flagę:
