@@ -10,7 +10,7 @@
 After entering the site there is a link that is an entry to the tunnel :-)
 After clicking, we go to the site http://tunnel.web.easyctf.com/images/DaicO7460493nYSuvLPW.png, where was the picture with the qr code:
 
-[DaicO7460493nYSuvLPW.png](DaicO7460493nYSuvLPW.png)
+![DaicO7460493nYSuvLPW.png](DaicO7460493nYSuvLPW.png)
 
 Python has a nice library for such purposes - `qrtools`.
 
@@ -62,7 +62,7 @@ Finally, the flag waits: `easyctf{y0u_sh0uld_b3_t1r3d_tr4v3ll1ng_all_th1s_w4y!!!
 Po wejściu na stronę pojawia się napis zachęcający do wejścia do tunelu :-)
 Po kliknięciu przechodzimy na stronę http://tunnel.web.easyctf.com/images/DaicO7460493nYSuvLPW.png, gdzie znajdował się obrazek z kodem qr:
 
-[DaicO7460493nYSuvLPW.png](DaicO7460493nYSuvLPW.png)
+![DaicO7460493nYSuvLPW.png](DaicO7460493nYSuvLPW.png)
 
 Python ma fajną bibliotekę do takich celów - `qrtools`.
 
