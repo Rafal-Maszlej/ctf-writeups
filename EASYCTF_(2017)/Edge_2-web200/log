@@ -1,0 +1,174 @@
+
+.git$ python3 request.py 6b4131bb3b84e9446218359414d636bda782d097
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   167  100   167    0     0    592      0 --:--:-- --:--:-- --:--:--   594
+
+.git$ git show
+fatal: unable to read tree 718a78c464ed47bf916ac8287612b8ad941f433d
+
+.git$ python3 request.py 718a78c464ed47bf916ac8287612b8ad941f433d
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   141  100   141    0     0    502      0 --:--:-- --:--:-- --:--:--   503
+
+.git$ git show
+fatal: unable to read tree ef6648fbe67b66177281ae47390dc85ee101c18b
+
+.git$ python3 request.py ef6648fbe67b66177281ae47390dc85ee101c18b
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   173  100   173    0     0    606      0 --:--:-- --:--:-- --:--:--   607
+
+.git$ git show
+fatal: unable to read eee07900b99065703cdb4e9b6690e7ea80f459c9
+commit a48ee6d6ca840b9130fbaa73bbf55e9e730e4cfd
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:12 2017 +0000
+
+    Prevent directory listing.
+
+.git$ git show
+commit a48ee6d6ca840b9130fbaa73bbf55e9e730e4cfd
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:12 2017 +0000
+
+    Prevent directory listing.
+
+diff --git a/.htaccess b/.htaccess
+new file mode 100644
+index 0000000..eee0790
+--- /dev/null
++++ b/.htaccess
+@@ -0,0 +1,2 @@
++Options -Indexes
++
+
+.git$ git log
+commit a48ee6d6ca840b9130fbaa73bbf55e9e730e4cfd
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:12 2017 +0000
+
+    Prevent directory listing.
+error: Could not read 26e35470d38c4d6815bc4426a862d5399f04865c
+fatal: Failed to traverse parents of commit 6b4131bb3b84e9446218359414d636bda782d097
+
+.git$ python3 request.py 26e35470d38c4d6815bc4426a862d5399f04865c
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   156  100   156    0     0    486      0 --:--:-- --:--:-- --:--:--   485
+
+.git$ git log
+commit a48ee6d6ca840b9130fbaa73bbf55e9e730e4cfd
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:12 2017 +0000
+
+    Prevent directory listing.
+
+commit 6b4131bb3b84e9446218359414d636bda782d097
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:10 2017 +0000
+
+    Whoops! Remove flag.
+error: Could not read 15ca375e54f056a576905b41a417b413c57df6eb
+fatal: Failed to traverse parents of commit 26e35470d38c4d6815bc4426a862d5399f04865c
+
+.git$ python3 request.py 15ca375e54f056a576905b41a417b413c57df6eb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   161  100   161    0     0    562      0 --:--:-- --:--:-- --:--:--   564
+
+.git$ git log
+commit a48ee6d6ca840b9130fbaa73bbf55e9e730e4cfd
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:12 2017 +0000
+
+    Prevent directory listing.
+
+commit 6b4131bb3b84e9446218359414d636bda782d097
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:10 2017 +0000
+
+    Whoops! Remove flag.
+
+commit 26e35470d38c4d6815bc4426a862d5399f04865c
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:09 2017 +0000
+
+    Initial.
+error: Could not read 8ac4f76df2ce8db696d75f5f146f4047a315af22
+fatal: Failed to traverse parents of commit 15ca375e54f056a576905b41a417b413c57df6eb
+
+.git$ python3 request.py 8ac4f76df2ce8db696d75f5f146f4047a315af22
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   133  100   133    0     0    353      0 --:--:-- --:--:-- --:--:--   353
+
+.git$ git log
+commit a48ee6d6ca840b9130fbaa73bbf55e9e730e4cfd
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:12 2017 +0000
+
+    Prevent directory listing.
+
+commit 6b4131bb3b84e9446218359414d636bda782d097
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:10 2017 +0000
+
+    Whoops! Remove flag.
+
+commit 26e35470d38c4d6815bc4426a862d5399f04865c
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:09 2017 +0000
+
+    Initial.
+
+commit 15ca375e54f056a576905b41a417b413c57df6eb
+Author: Fernando <fermayo@gmail.com>
+Date:   Sat Dec 14 12:50:09 2013 -0300
+
+    initial version
+
+commit 8ac4f76df2ce8db696d75f5f146f4047a315af22
+Author: Fernando Mayo <fermayo@gmail.com>
+Date:   Sat Dec 14 07:36:18 2013 -0800
+
+    Initial commit
+
+Commit 6b4131bb3b84e9446218359414d636bda782d097 ma w opisie "Whoops! Remove flag."
+
+.git$ git show 6b4131bb3b84e9446218359414d636bda782d097
+fatal: unable to read tree 323240a3983045cdc0dec2e88c1358e7998f2e39
+
+.git$ python3 request.py 323240a3983045cdc0dec2e88c1358e7998f2e39
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   173  100   173    0     0    608      0 --:--:-- --:--:-- --:--:--   609
+
+.git$ git show 6b4131bb3b84e9446218359414d636bda782d097
+fatal: unable to read cb6139863967a752f3402b3975e97a84d152fd8f
+commit 6b4131bb3b84e9446218359414d636bda782d097
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:10 2017 +0000
+
+    Whoops! Remove flag.
+
+.git$ python3 request.py cb6139863967a752f3402b3975e97a84d152fd8f
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    68  100    68    0     0    231      0 --:--:-- --:--:-- --:--:--   231
+
+.git$ git show 6b4131bb3b84e9446218359414d636bda782d097
+commit 6b4131bb3b84e9446218359414d636bda782d097
+Author: Michael <michael@easyctf.com>
+Date:   Mon Mar 13 07:32:10 2017 +0000
+
+    Whoops! Remove flag.
+
+diff --git a/flag.txt b/flag.txt
+deleted file mode 100644
+index cb61398..0000000
+--- a/flag.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-easyctf{hiding_the_problem_doesn't_mean_it's_gone!}
