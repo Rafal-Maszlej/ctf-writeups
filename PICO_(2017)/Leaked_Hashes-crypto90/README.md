@@ -1,8 +1,8 @@
 ## Leaked_Hashes [CRYPTO 90]
 
 >Someone got hacked! Check out some service's password hashes that were leaked at hashdump.txt! Do you think they chose strong passwords? We should check... The service is running at shell2017.picoctf.com:53397!
-HINTS
-See if you can crack any of the login credentials and then connect to the service as one of the users. What's the chance these hashes have actually already been broken by someone else? Are there websites that host those cracked hashes? Connect from the shell with nc.
+>HINTS
+>See if you can crack any of the login credentials and then connect to the service as one of the users. What's the chance these hashes have actually already been broken by someone else? Are there websites that host those cracked hashes? Connect from the shell with nc.
 
 * [hashdump.txt](hashdump.txt)
 
@@ -10,11 +10,11 @@ See if you can crack any of the login credentials and then connect to the servic
 
 ### Solution:
 
-Extracting the hashes from the file:
+Extracting hashes from the file:
 
 ```python
 for line in open('hashdump.txt'):
-	print(line.strip().partition(':')[-1])
+    print(line.strip().partition(':')[-1])
 ```
 
 And then using the site https://hashkiller.co.uk/md5-decrypter.aspx we can easily check if one of them is broken.
@@ -123,7 +123,7 @@ Wyodrębnienie samych hashy z pliku:
 
 ```python
 for line in open('hashdump.txt'):
-	print(line.strip().partition(':')[-1])
+    print(line.strip().partition(':')[-1])
 ```
 
 A potem korzystając ze strony https://hashkiller.co.uk/md5-decrypter.aspx można łatwo sprawdzić czy któryś z nich nie został już przypadkiem złamany.
