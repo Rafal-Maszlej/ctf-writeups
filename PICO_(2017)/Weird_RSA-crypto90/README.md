@@ -15,6 +15,7 @@ They are used to optimize RSA calculations using the `Chinese Remainder Theorem`
 Links to this topic:
 
 http://crypto.stackexchange.com/questions/19413/what-are-dp-and-dq-in-encryption-by-rsa-in-c
+
 http://www.di-mgt.com.au/crt_rsa.html
 
 With `dp` and `p` you can find `e` and further decrypt the message.
@@ -58,6 +59,7 @@ Są one używane do optymalizacji obliczeń RSA z użyciem algorytmu `Chinese Re
 Linki na ten temat:
 
 http://crypto.stackexchange.com/questions/19413/what-are-dp-and-dq-in-encryption-by-rsa-in-c
+
 http://www.di-mgt.com.au/crt_rsa.html
 
 Mając `dp` i `p` można znaleźć `e` i dalej odszyfrować wiadomość.
