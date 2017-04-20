@@ -93,7 +93,7 @@ You can then deduce that `file` is probably some archive, eg. `zip` containing i
 
 Missing bytes from the header file can be easily found, eg. [here](https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html)
 
-Conversion of values:
+Replacing of values:
 
 ```python
 with open('file', 'rb') as f:
