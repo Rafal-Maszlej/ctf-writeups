@@ -56,7 +56,7 @@ hello
 
 And in this place I realized that I could not call `__builtins__` directly because it has two `i` in it...
 
-Fortunately, there are as many as three dictionaries available, from which you can use any - `vars ()`, `locals ()` and `globals ()`.
+Fortunately, there are as many as three dictionaries available, from which you can use any of those- `vars()`, `locals()` and `globals()`.
 
 ```
 >>> vars()
