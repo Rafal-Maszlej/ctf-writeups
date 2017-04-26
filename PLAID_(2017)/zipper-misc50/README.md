@@ -19,7 +19,7 @@ warning:  filename too long--truncating.
 :  bad extra field length (central)
 ```
 
-But I got important information:
+But I got important informations:
 
 * name of the compressed file is too long
 * there is some error in the `length` field value
@@ -50,7 +50,7 @@ Hmm, it looks like there is no file name here at all.
 
 At this point I decided to educationally split this file into the first parts.
 
-A lot of useful information I found under these links:
+A lot of useful informations I found under these links:
 
 * http://mdfs.net/Docs/Comp/Archiving/Zip/ExtraField
 * https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT
@@ -172,7 +172,7 @@ These are the places to fix.
 
 ```python
 with open('zipper.zip', 'rb') as z:
-	data = bytearray(z.read())
+    data = bytearray(z.read())
 
 data[30:38] = b'flag.txt'
 data[182:190] = b'flag.txt'
@@ -180,7 +180,7 @@ data[26:28] = b'\x08\x00'
 data[164:166] = b'\x08\x00'
 
 with open('fixed.zip', 'wb') as f:
-	f.write(data)
+    f.write(data)
 ```
 
 Another flag :-)
@@ -367,7 +367,7 @@ To są miejsca, które trzeba naprawić.
 
 ```python
 with open('zipper.zip', 'rb') as z:
-	data = bytearray(z.read())
+    data = bytearray(z.read())
 
 data[30:38] = b'flag.txt'
 data[182:190] = b'flag.txt'
@@ -375,7 +375,7 @@ data[26:28] = b'\x08\x00'
 data[164:166] = b'\x08\x00'
 
 with open('fixed.zip', 'wb') as f:
-	f.write(data)
+    f.write(data)
 ```
 
 Kolejna flaga :-)
