@@ -28,7 +28,7 @@ for i in range(1, n+1):
         print(i)
 ```
 
-Well, there is a lot of useful words containing `i`: `int`, `input`, `if`, `print`... Looking for a solution was fun :-)
+Well, there is a lot of useful words containing `i`: `int`, `input`, `if`, `print`, `spanish inquisition`... Looking for a solution was fun :-)
 
 The first thing that came to mind was `__builtins__`.
 
@@ -54,7 +54,7 @@ hello
 hello
 ```
 
-And in this place I realized that I could not call `__builtins__` directly because it has two `and` in it...
+And in this place I realized that I could not call `__builtins__` directly because it has two `i` in it...
 
 Fortunately, there are as many as three dictionaries available, from which you can use any - `vars ()`, `locals ()` and `globals ()`.
 
@@ -141,7 +141,7 @@ for i in range(1, n+1):
         print(i)
 ```
 
-Cóż, dużo tu przydatnych słów zawierających `i`: `int`, `input`, `if`, `print`... Szukanie rozwiązania było fajną zabawą :-)
+Cóż, dużo tu przydatnych słów zawierających `i`: `int`, `input`, `if`, `print`, `spanish inquisition`... Szukanie rozwiązania było fajną zabawą :-)
 
 Pierwsze co przyszło mi na myśl, to `__builtins__`.
 
