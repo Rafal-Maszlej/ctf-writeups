@@ -11,4 +11,3 @@
 * [Return Of The Notorious Alignment (prog 300)](Return_Of_The_Notorious_Alignment-prog300)
 * [Fibonacci Calls (prog 400)](Fibonacci_Calls-prog400)
 * [Vibranium Circuit Challenge (prog 400)](Vibranium_Circuit_Challenge-prog400)
-* [Christmas Wishes Letter (crypto 200)](Christmas_Wishes_Letter-crypto200)
