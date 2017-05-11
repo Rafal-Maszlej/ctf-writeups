@@ -26,7 +26,7 @@ After decoding I wrote the values of the characters:
 
 You can see that the values are a bit big.
 
-It is known that the beginning of the flag is `3ds {`.
+It is known that the beginning of the flag is `3DS{`.
 
 Values of these chars are:
 
@@ -66,7 +66,7 @@ Po rozkodowaniu wypisałem wartości poszczególnych znaków:
 
 Widać, że wartości są trochę duże.
 
-Wiadomo, że początek flagi, to `3ds{`.
+Wiadomo, że początek flagi, to `3DS{`.
 
 Wartości tych znaków, to:
 
