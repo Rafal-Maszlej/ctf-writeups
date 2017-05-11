@@ -78,7 +78,7 @@ def magic2(a, b):
 
 Tutaj wszystko wygląda prawie tak samo, z wyjątkiem tego, że zamiast `o += 1` mamy `o = magic1(o, a)`.<br>
 Wiadomo już, że `magic1(o, a)` to tak naprawdę `o + a`.<br>
-W `magic2` wartość `o` zwiększa się o `a` tyle razy, ile wynosi wartość `b`. Jest to więc zwykłe mnożenie :-)
+W `magic2` wartość `o` zwiększa się o wartość `a` tyle razy, ile wynosi wartość `b`. Jest to więc zwykłe mnożenie :-)
 
 Funkcja po uproszczeniu:
 
