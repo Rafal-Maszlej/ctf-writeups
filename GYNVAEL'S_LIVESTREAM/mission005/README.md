@@ -1,4 +1,4 @@
-## mission 004
+## mission 005
 
 >We've already learned not to rely on "agent Huffman's" ability to send us text<br>
 >messages. So this time, we've asked him to take a picture of some secret<br>
@@ -100,6 +100,6 @@ img.save('secret.png')
 
 And picture:
 
-[secret](secret.png)
+![secret](secret.png)
 
 WHO RUNS THIS ENCODING ???
