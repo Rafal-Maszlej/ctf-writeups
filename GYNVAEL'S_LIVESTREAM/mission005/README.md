@@ -91,7 +91,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
 pixels = ''.join([i*str(j) for i, j in zip(resp[::2], resp[1::2])])
-pixels = [(WHITE, BLACK)[i == '1'] for i in list(pixels)]
+pixels = [(WHITE, BLACK)[pixel == '1'] for pixel in pixels]
 
 img = Image.new("RGB", (640, 212))
 img.putdata(pixels)
