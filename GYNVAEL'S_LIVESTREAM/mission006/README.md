@@ -1,4 +1,4 @@
-## mission 005
+## mission 006
 
 >Finally we hired a new secret agent and moved agent Huffman to do some harmless<br>
 >paperwork. That's the good news. The bad news is that agent Huffman made it his<br>
