@@ -1,4 +1,4 @@
-## mission 006
+## mission 010
 
 >Usually we can blame our agents for weird security fails. Sadly not this time.<br>
 >This time we shoulder the blame.
@@ -154,7 +154,7 @@ Password ```password```:
 '00001111000011110011111001111110111111101101001110010011'
 ```
 
-Our mask ```11100000000010100100000000000000000000000001000100000100``` pecifies which bits of the password we want to validate during validation.
+Our mask ```11100000000010100100000000000000000000000001000100000100``` specifies which bits of the password we want to validate during validation.
 
 If we now send ```000110110```, we will be able to log in.
 
