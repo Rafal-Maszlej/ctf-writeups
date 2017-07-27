@@ -39,19 +39,19 @@ s.connect((HOST, PORT))
 log = open('log.txt', 'w')
 
 def send(data):
-	data = data + '\n'
-	print(data)
-	log.write(data)
-	data = bytes(data, 'utf-8')
-	s.sendall(data)
+    data = data + '\n'
+    print(data)
+    log.write(data)
+    data = bytes(data, 'utf-8')
+    s.sendall(data)
 
 def recv():
-	data = s.recv(1024)
-	data = str(data, 'utf-8')
-	print(data)
-	log.write(data)
-	
-	return data
+    data = s.recv(1024)
+    data = str(data, 'utf-8')
+    print(data)
+    log.write(data)
+    
+    return data
 
 # SOME CODE HERE
 
@@ -81,18 +81,18 @@ It's easy to find out what the password length is.
 ```python
 i = 1
 while True:
-	send('a' * i)
-	data = recv()
-	
-	if 'Mask too short.' in data:
-		s.close()
-		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((HOST, PORT))
-		recv()
-		i += 1
-		continue
-		
-	break
+    send('a' * i)
+    data = recv()
+    
+    if 'Mask too short.' in data:
+        s.close()
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOST, PORT))
+        recv()
+        i += 1
+        continue
+        
+    break
 
 print(i)
 ```
@@ -190,7 +190,7 @@ Small test:
 from string import ascii_letters
 
 for char in ascii_letters:
-	print(char, bin(ord(char))[2:].zfill(8))
+    print(char, bin(ord(char))[2:].zfill(8))
 ```
 
 ```
@@ -274,30 +274,30 @@ SECRET1 = list('0' * 560)
 bit = 0
 
 while bit < 560:
-	mask = list('00000001' * 70)
-	
-	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.connect((HOST, PORT))
+    mask = list('00000001' * 70)
+    
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((HOST, PORT))
 
-	recv() # "Enter shared secret mask you want to try:
-	
-	mask[bit] = '1'
-	mask = ''.join(mask)
-	send(mask)
-	
-	recv() # "Alright, now send in the bits:
-	
-	secret1 = '0' * 71
-	send(secret1)
-	
-	data = recv() # Access Denied / Access Granted
-	
-	if 'Access Denied' in data:
-		SECRET1[bit] = '1'
-	
-	bit += 1
-	
-	s.close()
+    recv() # "Enter shared secret mask you want to try:
+    
+    mask[bit] = '1'
+    mask = ''.join(mask)
+    send(mask)
+    
+    recv() # "Alright, now send in the bits:
+    
+    secret1 = '0' * 71
+    send(secret1)
+    
+    data = recv() # Access Denied / Access Granted
+    
+    if 'Access Denied' in data:
+        SECRET1[bit] = '1'
+    
+    bit += 1
+    
+    s.close()
 
 
 SECRET1 = ''.join(chr(int(''.join(SECRET1[i:i+8][::-1]), 2)) for i in range(0, 560, 8))
